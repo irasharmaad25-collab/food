@@ -1,0 +1,274 @@
+:host {
+  display: block;
+  min-height: 100vh;
+
+  --zomato-red: #e23744;
+  --zomato-dark: #1f2937;
+  --zomato-light: #fff8f5;
+}
+
+
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+.navbar {
+  min-height: 76px;
+}
+
+.brand-logo {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--zomato-red);
+  color: white;
+
+  border-radius: 12px;
+
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.brand-name {
+  font-size: 28px;
+  color: #222;
+  letter-spacing: -1px;
+}
+
+.nav-link {
+  color: #555;
+  font-weight: 600;
+  margin: 0 8px;
+}
+
+.nav-link:hover {
+  color: var(--zomato-red);
+}
+
+.nav-link.active {
+  color: var(--zomato-red);
+}
+
+
+/* ========================= */
+/* HOME */
+/* ========================= */
+
+.hero {
+  min-height: calc(100vh - 76px);
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff8f5,
+      #ffffff,
+      #fff0ed
+    );
+}
+
+.hero h1 {
+  color: #172033;
+  letter-spacing: -3px;
+}
+
+.hero p {
+  max-width: 650px;
+}
+
+.food-card {
+  background: white;
+}
+
+.food-icon {
+  width: 90px;
+  height: 90px;
+
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fff0ed;
+
+  border-radius: 25px;
+
+  font-size: 48px;
+}
+
+
+/* ========================= */
+/* GENERAL PAGE */
+/* ========================= */
+
+.page-section {
+  min-height: calc(100vh - 76px);
+
+  background:
+    linear-gradient(
+      145deg,
+      #fff8f5,
+      #ffffff,
+      #fff1ed
+    );
+}
+
+.section-label {
+  color: var(--zomato-red);
+
+  font-size: 13px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+/* ========================= */
+/* FOOD CATEGORY */
+/* ========================= */
+
+.food-category {
+  border: none;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.07);
+
+  transition: 0.3s;
+}
+
+.food-category:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ========================= */
+/* OFFERS */
+/* ========================= */
+
+.offer-card {
+  background: var(--zomato-dark);
+
+  color: white;
+
+  padding: 50px;
+
+  border-radius: 25px;
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ========================= */
+/* ABOUT */
+/* ========================= */
+
+.about-text {
+  max-width: 700px;
+}
+
+
+/* ========================= */
+/* RESTAURANTS */
+/* ========================= */
+
+.restaurant-card {
+  border: none;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-7px);
+}
+
+.restaurant-image {
+  height: 180px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #fff0ed;
+
+  font-size: 80px;
+}
+
+
+/* ========================= */
+/* LOGIN */
+/* ========================= */
+
+.login-page {
+  min-height: calc(100vh - 76px);
+
+  padding: 80px 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff8f5,
+      #ffffff
+    );
+}
+
+.login-card {
+  border-radius: 25px;
+
+  overflow: hidden;
+}
+
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+.footer {
+  background: #1f2937;
+
+  color: white;
+
+  padding: 25px 0;
+}
+
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 991px) {
+
+  .navbar-collapse {
+    padding: 20px 0;
+  }
+
+  .nav-link {
+    padding: 10px 0;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .hero h1 {
+    letter-spacing: -1px;
+  }
+
+}
